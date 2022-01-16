@@ -1,11 +1,13 @@
 body {
-    background-color: black;
-    color: blue;
+    background-color:#F0FFFF;
+    ;
+    color: #696969;
 }
 h1,  h3 {
     text-align: center;
     margin-bottom: 20px;
 }
+
 
 #form-container {
     width: 300px;

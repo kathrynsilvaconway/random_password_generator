@@ -15,12 +15,15 @@
 <body>
 <body>
     <h1>Generate your password:</h1>
+
+    <h4>{{message01}}</h4>
+    <h4>{{message02}}</h4>
     <div id="form-container">
         <form action="/generate_password" method="POST">
         {% csrf_token %}
         <div class='form-group'>
-            <label for="length">Password Length:</label>
-            <input type="integer" class="form-control" name="length">
+            <label for="length">Password Length:  </label>
+            <input type="integer" style="border-radius: 5px;" size="1" name="length">
         </div>
         <input type="submit" class="btn btn-secondary" style="margin-top: 10px;">
     </div>

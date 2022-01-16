@@ -11,6 +11,11 @@ def generate_password(request):
     password = ""
     length = request.POST['length']
     length = int(length)
+    if length < 5:
+        context = {
+            'message01': "Length must be greater than 5",
+        }
+        return render (request, 'index.html', context)
     letters = string.ascii_letters +string.digits +'!'+'&'+'?'+'#'+'$'+'%'+'*'
     for x in range(length):
         password += random.choice(letters)
